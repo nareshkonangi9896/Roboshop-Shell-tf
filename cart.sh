@@ -53,7 +53,7 @@ else
     npm install &>> $LOGFILE
     VALIDATE $? "installing dependencies"
 
-    cp /home/centos/Roboshop-Shell/cart.service /etc/systemd/system/ &>> $LOGFILE
+    cp /home/centos/Roboshop-Shell-t/cart.service /etc/systemd/system/ &>> $LOGFILE
     VALIDATE $? "creating cart.service"
 
     systemctl daemon-reload &>> $LOGFILE
