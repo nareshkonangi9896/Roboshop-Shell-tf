@@ -50,7 +50,7 @@ else
     pip3.6 install -r requirements.txt &>> $LOGFILE
     VALIDATE $? "installing dependencies"
 
-    cp /home/centos/Roboshop-Shell/payment.service /etc/systemd/system/ &>> $LOGFILE
+    cp /home/centos/Roboshop-Shell-tf/payment.service /etc/systemd/system/ &>> $LOGFILE
     VALIDATE $? "creating payment service"
 
     systemctl daemon-reload &>> $LOGFILE

@@ -53,7 +53,7 @@ else
     npm install &>> $LOGFILE
     VALIDATE $? "installing dependencies"
 
-    cp /home/centos/Roboshop-Shell/user.service /etc/systemd/system/ &>> $LOGFILE
+    cp /home/centos/Roboshop-Shell-tf/user.service /etc/systemd/system/ &>> $LOGFILE
     VALIDATE $? "creating user.service"
 
     systemctl daemon-reload &>> $LOGFILE
@@ -65,7 +65,7 @@ else
     systemctl start user &>> $LOGFILE
     VALIDATE $? "starting user" &>> $LOGFILE
 
-    cp /home/centos/Roboshop-Shell/mongo.repo /etc/yum.repos.d/ &>> $LOGFILE
+    cp /home/centos/Roboshop-Shell-tf/mongo.repo /etc/yum.repos.d/ &>> $LOGFILE
     VALIDATE $? "Setup the MongoDB repo file"
 
     yum install mongodb-org-shell -y &>> $LOGFILE

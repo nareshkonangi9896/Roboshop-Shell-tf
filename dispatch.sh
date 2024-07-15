@@ -59,7 +59,7 @@ else
     go build &>> $LOGFILE
     VALIDATE $? "build dependencies"
 
-    cp /home/centos/Roboshop-Shell/dispatch.service /etc/systemd/system/ &>> $LOGFILE
+    cp /home/centos/Roboshop-Shell-tf/dispatch.service /etc/systemd/system/ &>> $LOGFILE
     VALIDATE $? "creating payment service"
 
     systemctl daemon-reload &>> $LOGFILE

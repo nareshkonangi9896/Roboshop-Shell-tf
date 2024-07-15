@@ -53,7 +53,7 @@ else
     mv target/shipping-1.0.jar shipping.jar
     VALIDATE $? "Moving jar file"
 
-    cp /home/centos/Roboshop-Shell/shipping.service /etc/systemd/system/&>> $LOGFILE
+    cp /home/centos/Roboshop-Shell-tf/shipping.service /etc/systemd/system/&>> $LOGFILE
     VALIDATE $? "creating shipping service"
 
     systemctl daemon-reload &>> $LOGFILE

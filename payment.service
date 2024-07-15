@@ -4,10 +4,10 @@ Description=Payment Service
 [Service]
 User=root
 WorkingDirectory=/app
-Environment=CART_HOST=cart.nareshdevops.online
-Environment=CART_PORT=8080
-Environment=USER_HOST=user.nareshdevops.online
-Environment=USER_PORT=8080
+Environment=CART_HOST=cart.app.nareshdevops.online
+Environment=CART_PORT=80
+Environment=USER_HOST=user.app.nareshdevops.online
+Environment=USER_PORT=80
 Environment=AMQP_HOST=rabbitmq.nareshdevops.online
 Environment=AMQP_USER=roboshop
 Environment=AMQP_PASS=roboshop123
